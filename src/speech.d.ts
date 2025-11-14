@@ -59,7 +59,6 @@ interface Window {
     };
 }
 
-// FIX: Replaced `declare var process` with a namespace augmentation to avoid redeclaring a global variable.
 // This makes process.env.API_KEY available to TypeScript by augmenting the existing
 // `NodeJS.ProcessEnv` interface, which avoids conflicts with other type definitions for `process`.
 declare namespace NodeJS {
